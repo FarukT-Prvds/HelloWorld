@@ -25,10 +25,11 @@
 
 ````mermaid
 graph LR
-A[Square Rect] -- m:n ----> B[Square Rect]
-B -- 1:m ------> C{Rhombus}
-C -- n:1 ------> D((Circle))
-D --------> A
+A[State 1] -- m:n --> B[State 2]
+B -- 1:m --> C{State 3}
+C -- n:1 --> D((State 4))
+D --> A
+A ---> E(((Final)))
 
 ````
 
